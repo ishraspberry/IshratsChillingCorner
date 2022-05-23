@@ -1,0 +1,393 @@
+html,
+body {
+  /*This is for the general body of the entire document*/
+  margin: 0; /*margin starts from 0 (center kinda)*/
+  padding: 0;
+  background-image: url("/images/Test.jpg"); /*froge background inserted here*/
+  background-repeat: no-repeat; /*do not repeat the images in the back*/
+  background-size: cover; /*this for for it covering the entire dimensions of the page*/
+  background-attachment: fixed; /*The background never moves, it stays there and everything else moves*/
+  /*helps with keeping the image fixed in its spot (remember attachment!)*/
+  background-position: center; /*keep it in the middle*/
+  /*how to position the image/ how its seen, from its center, center top, etc...*/
+  text-align: center; /*all the text shall be centered*/
+  height: 100vh;
+  width: 100%;
+  cursor: url("/images/mouse.png"), auto; /*the mouse will be this png image*/
+}
+/*this is the body. Here is how long my site is so far, as well as the background color for it!*/
+
+.welcome {
+  background-color: rgb(84, 151, 78);
+  position: relative; /*position relative to main*/
+  display: flex;
+  /*helps when window is resized aka shrinks or grows and doent move elems around
+  it helps keep it in place*/
+  flex-wrap: nowrap; /*this decides how the lines are displayed, one line or two sorta*/
+  justify-content: space-evenly;
+  border-top: 2px solid pink; /*the border at the top and bottom of the welcome header*/
+  border-bottom: 2px solid pink;
+  width: 100%; /*we spread it to the full width of the page*/
+}
+.welcome h1 {
+  background-color: rgb(250, 226, 230);
+  font-family: "Lobster Two", cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 3px; /*all the letter and font stuff*/
+  border: 2px pink solid;
+  border-radius: 7px; /*this is for the border outline*/
+  padding: 7px;
+  padding-right: 18px;
+  padding-left: 18px;
+  /*this is for the inside of the header text box*/
+}
+
+/*for the heart images next to the header*/
+.img1 {
+  float: left; /*which side it is for the header*/
+  zoom: 1.16; /*this is for making the heart bigger*/
+  padding-top: 12px;
+}
+.img2 {
+  float: right;
+  zoom: 1.16;
+  padding-top: 12px;
+}
+
+#basicText {
+  background: rgba(255, 255, 255, 0.8);
+  font-family: "Lobster Two", cursive;
+  font-size: 35px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  display: flex;
+  /*helps when window is resized aka shrinks or grows and doent move elems around
+  it helps keep it in place*/
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.links {
+  margin: auto;
+  font-family: "Lobster two", cursive;
+  font-size: 40px;
+  align-items: center;
+  padding-bottom: 90px;
+  width: 100%; /*makes so that even if we reduce the screen, itll stay the same*/
+}
+.stuff {
+  /*for the option links*/
+  display: inline-flex;
+  background-image: linear-gradient(220deg, white, rgb(255, 218, 224));
+  text-decoration: none;
+  border: 3px pink solid;
+  border-radius: 40px;
+  padding: 30px;
+  margin-right: 15px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+.atw {
+  position: relative;
+  height: 300px;
+}
+.first {
+  position: absolute;
+  display: inline-flex;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(95%, 0);
+  }
+  50% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(95%, 0);
+  }
+}
+/*for the contact page links*/
+#name {
+  /*this makes sure everything in the box is properly aligned for the submission boxes*/
+  margin-left: 40px; /*refer to name id in contact*/
+}
+#formed {
+  /*everything in the form box*/
+  background-color: rgb(63, 174, 53);
+  border: 2px black solid;
+  border-radius: 10px;
+  margin-left: auto; /*these two lines keep the box centered*/
+  margin-right: auto;
+  max-width: 250px; /*how big the form can be at MOST*/
+  padding: 9px; /*everything in the box*/
+  padding-right: 0%;
+  align-items: center; /*keep everything centered*/
+}
+
+#name_label {
+  /*all of the description labels in the form*/
+  max-width: 55px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px;
+  font-family: Lobster Two, cursive;
+  font-weight: bold;
+  float: left;
+}
+
+.button {
+  /*button for submission (still worked on, will check later with php side server)*/
+  display: flex;
+  justify-content: center; /*justify content adjusts the materials inside HORIZONTALLY*/
+  margin: auto; /*centers button to middle of page*/
+  margin-top: 10px;
+  width: 50px;
+  background-color: lightseagreen;
+}
+
+/*for the picture html link!*/
+.introPictures {
+  position: relative; /*in relative to the whole page itself*/
+}
+#picturehead {
+  display: inline; /*displays items like a <span>, it makes the width the size of the font basically*/
+  background-color: pink;
+  font-family: Lobster Two, cursive;
+  font-size: 33px;
+  border: 2px pink solid;
+  border-radius: 3px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+#picturepara {
+  max-width: 400px;
+  background-color: white;
+  font-size: 17px;
+  font-family: Lobster Two;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3px;
+}
+
+#picturepara2 {
+  background-color: white;
+  font-size: 17px;
+  font-family: Lobster Two;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3px;
+  max-width: fit-content; /*fit only the width of the paragraph*/
+}
+.myCollection {
+  display: inline;
+}
+#centered {
+  margin: 0;
+}
+.edits {
+  border: 2px solid yellow;
+  max-width: 240px;
+  max-height: 240px;
+  margin-right: 15%;
+  margin-left: 12%;
+}
+
+/*song html page*/
+#songParagraph {
+  max-width: 555px;
+  background-color: rgb(255, 242, 244);
+  color: hotpink;
+  font-size: 23px;
+  font-family: Lobster Two;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 11px;
+  border: 4px hotpink solid;
+  padding: 4px;
+}
+
+.rainyDay {
+  max-height: 198px;
+  min-width: 165px;
+  display: inline-block;
+  background-color: rgba(114, 160, 245, 0.7);
+  margin-right: 15px;
+  border: 5px black double;
+  border-radius: 14px;
+}
+.dance {
+  max-height: 200px;
+  min-width: 172px;
+  display: inline-block;
+  background-color: rgba(255, 144, 251, 0.7);
+  margin-right: 15px;
+  border: 5px black double;
+  border-radius: 14px;
+}
+.calmvibes {
+  max-height: 200px;
+  min-width: 169px;
+  display: inline-block;
+  background-color: rgba(255, 127, 80, 0.626);
+  border: 5px black double;
+  border-radius: 14px;
+}
+/*headers aka title for each box*/
+#calmHead {
+  font-family: Lobster Two, cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: rgb(255, 187, 128);
+  max-width: 167px;
+  max-height: 35px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  -webkit-text-stroke-color: rgb(22, 14, 2);
+  -webkit-text-stroke-width: 0.1px;
+}
+#rainyHead {
+  font-family: Lobster Two, cursive;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: lightblue;
+  max-width: 165px;
+  max-height: 35px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  -webkit-text-stroke-color: darkblue;
+  -webkit-text-stroke-width: 0.1px;
+}
+#danceHead {
+  background-color: rgb(242, 224, 255);
+  max-width: auto;
+  max-height: 35px;
+  font-family: Lobster Two, cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  -webkit-text-stroke-color: purple;
+  -webkit-text-stroke-width: 0.1px;
+}
+#words {
+  /*for little space at the bottom*/
+  font-size: 30px;
+}
+/*minigame*/
+#sudowudoojump {
+  background-image: url(/images/skyhigh.png);
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#person {
+  position: relative;
+  min-width: 35px;
+  min-height: 50px;
+  background-image: url(/images/sprite.png);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  top: 227px; /*height of dinojump - height of person*/
+}
+#score {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  background-color: pink;
+  border-radius: 3px;
+}
+#obstacle {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border: 1px solid black;
+  position: relative;
+  top: 195px;
+  left: 600px;
+  animation: block 2s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 200px;
+  }
+  30% {
+    top: 150px;
+  }
+  50% {
+    top: 100px;
+  }
+  70% {
+    top: 150px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@keyframes block {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -4px;
+  }
+}
+.animate {
+  animation: jump 400ms linear;
+}
+.footer {
+  position: fixed;
+  background-image: linear-gradient(
+    to right,
+    rgb(84, 151, 78),
+    white,
+    rgb(84, 151, 78)
+  );
+  bottom: 0;
+  max-height: 25px;
+  font-family: "Lobster Two", cursive;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  border-top: 4px black solid;
+  width: 100%;
+  clear: both;
+}
+#homepage {
+  /*the link to return to the homepage*/
+  width: 100%;
+  background: rgb(255, 255, 205);
+  border-radius: 4px;
+  padding: 3px;
+  display: flexbox;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Lobster Two, cursive;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS web</title>
+    <!--title for webpage-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Sacramento&display=swap");
+    </style>
+    <!--This was for using our fancy font-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--css divs-->
+    <link rel="icon" href="Test.jpg" />
+    <!--this is for the icon for the tab-->
+  </head>
+  <!--here is where we seperate the body and the head-->
+  <body>
+    <div class="welcome">
+      <!--this is our "container" class for the header area-->
+      <div class="img1">
+        <!--all the images to the right of the header, only three hearts-->
+        <audio autoplay loop src="./jazz.mp3"></audio
+        ><!--background music for site-->
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+      </div>
+      <h1>Ishrats Chilling Corner</h1>
+      <!--header-->
+      <div class="img2">
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+        <img src="pinkity.png" alt="" /><img src="pinkity.png" alt="" />
+      </div>
+    </div>
+    <div class="arena">
+      <p id="basicText" style="font-size: 30px; max-width: 450px">
+        Contact me below for anything and everything!
+      </p>
+      <form id="formed" action="sendmessagetomeplease.php" method="post">
+        <div class="altogether">
+          <label for="name" id="name_label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="fname"
+            placeholder="enter name here..."
+            style="font-family: Lobster Two; border-radius: 2px"
+          />
+          <br />
+          <br />
+          <label for="email" id="name_label">Email: </label>
+          <input
+            type="text"
+            id="name"
+            name="email"
+            placeholder="enter email here..."
+            style="font-family: Lobster Two; border-radius: 2px"
+          />
+          <br />
+          <br />
+          <label for="text" id="name_label">Spill Tea:</label>
+          <textarea
+            id="stuffsaid"
+            name="message"
+            rows="7"
+            cols="18"
+            style="margin-left: 8%; font-family: Lobster Two; resize: none"
+            placeholder="What do you want to say?"
+          ></textarea>
+          <input type="submit" name="submit" class="button" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br /><br />
+    <div class="return">
+      <span><a href="4hoursin.html" id="homepage">Return to Homepage!</a></span>
+    </div>
+    <br /><br /><br /><br />
+    <div class="footer">
+      <div id="end"><p>All Rights Reserved</p></div>
+    </div>
+    <!-- footer -->
+  </body>
+</html>
